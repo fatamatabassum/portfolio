@@ -144,7 +144,7 @@ header.top{
   font-family: var(--mono);
   font-size: 0.72rem;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--accent-ink);
   display: flex;
   align-items: center;
