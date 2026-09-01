@@ -9,6 +9,42 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="style.css" />
+<style>
+/* Fix hidden hero content */
+.hero-center .reveal {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  filter: none !important;
+}
+
+/* Reduce the large empty hero area */
+.hero-center {
+  min-height: auto !important;
+  padding: 90px 20px 65px !important;
+}
+
+.hero-center .mega,
+.hero-center .pop,
+.hero-center .eyebrow,
+.hero-center .lede,
+.hero-center .actions {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Keep the title visible on tablets and phones */
+@media (max-width: 768px) {
+  .hero-center {
+    padding: 65px 18px 45px !important;
+  }
+
+  .mega {
+    font-size: clamp(2.7rem, 12vw, 5rem) !important;
+    line-height: 1.05 !important;
+  }
+}
+</style>
 </head>
 <body data-page="home">
 <header class="top">
